@@ -6,8 +6,8 @@ namespace xzing.Models
 {
     public enum MenuItemType
     {
-        Browse,
-        About
+        ItemsDetail,
+        Search
     }
     public class HomeMenuItem
     {

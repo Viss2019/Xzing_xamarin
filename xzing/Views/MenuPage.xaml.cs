@@ -18,8 +18,8 @@ namespace xzing.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About" }
+                new HomeMenuItem {Id = MenuItemType.ItemsDetail, Title="ItemsDetail" },
+                new HomeMenuItem {Id = MenuItemType.Search, Title="Search" }
             };
 
             ListViewMenu.ItemsSource = menuItems;
