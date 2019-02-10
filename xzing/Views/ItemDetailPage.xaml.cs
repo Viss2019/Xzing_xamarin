@@ -26,8 +26,9 @@ namespace xzing.Views
 
             var item = new Item
             {
-                Text = "Item 1",
-                Description = "This is an item description."
+                Name = "Item 1",
+                
+
             };
 
             viewModel = new ItemDetailViewModel(item);

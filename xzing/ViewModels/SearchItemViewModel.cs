@@ -1,19 +1,22 @@
-﻿using System;
-using System.Windows.Input;
+﻿
 
-using Xamarin.Forms;
+using System.Threading.Tasks;
+using xzing.Models;
+using xzing.Views;
 
 namespace xzing.ViewModels
 {
     public class SearchItemViewModel : BaseViewModel
     {
+
         public SearchItemViewModel()
         {
             Title = "Search";
-
-            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
         }
 
-        public ICommand OpenWebCommand { get; }
+        public async Task<Item> SearchItem(string itemName)
+        {
+           return await DataStore.GetItemAsync(itemName);
+        }
     }
 }
